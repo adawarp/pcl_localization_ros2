@@ -46,7 +46,8 @@ def generate_launch_description():
         namespace='',
         package='pcl_localization_ros2',
         executable='pcl_localization_node',
-        remappings=[('/cloud','/points_raw')],
+        # remappings=[('/cloud','/points_raw')],
+        remappings=[('/cloud','/points')],
         parameters=[localization_param_dir],
         output='screen')
 
